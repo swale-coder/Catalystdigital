@@ -1,0 +1,135 @@
+ body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff; /* CHANGED: Body background to White */
+    }
+
+    /* App Layout */
+    .app-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+    }
+    
+    /* Header */
+    .header-bar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+    }
+    .header-title {
+      max-width: 1280px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1d4ed8; /* CHANGED: Header text to Blue */
+    }
+
+    /* Service Section */
+    .service-section {
+      padding: 4rem 1rem;
+      flex-grow: 1;
+      background-color: #ffffff; /* CHANGED: Service background to White */
+    }
+    .service-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .service-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #1d4ed8; /* CHANGED: Title to Dark Blue */
+      margin-bottom: 0.5rem;
+    }
+
+    .service-subtitle {
+      font-size: 1.25rem;
+      color: #4b5563; /* Dark Gray for subtitle contrast */
+      max-width: 640px;
+      margin: 0.5rem auto 4rem;
+    }
+
+    /* Service Grid */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (min-width: 768px) {
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Service Card */
+    .service-card {
+      padding: 2rem;
+      background-color: #f4f7fa; /* Very Light Blueish background for contrast */
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
+      border-top: 4px solid #1d4ed8; /* CHANGED: Card border to Dark Blue */
+    }
+    .service-card:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      transform: translateY(-5px);
+      background-color: #ffffff;
+    }
+
+    .service-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-icon {
+      padding: 1rem;
+      background-color: #e0e7ff; /* Lightest Blue icon background */
+      border-radius: 9999px; /* Full circle */
+      display: inline-flex;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      width: 56px;
+      height: 56px;
+    }
+    
+    /* Icon Colors */
+    .icon-code { color: #1d4ed8; } /* Primary Blue */
+    .icon-design { color: #2563eb; } /* Mid Blue */
+    .icon-marketing { color: #3b82f6; } /* Light Blue */
+
+
+    .service-card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1d4ed8; /* CHANGED: Card title to Dark Blue */
+      margin-bottom: 0.75rem;
+    }
+
+    .service-description {
+      color: #4b5563; /* Dark Gray/Blueish for readability */
+      line-height: 1.6;
+      font-size: 0.875rem;
+    }
+    
+    /* Footer */
+    .footer-bar {
+      background-color: #e0e7ff; /* CHANGED: Footer background to Light Blue */
+      color: #1d4ed8; /* CHANGED: Footer text to Blue */
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: auto;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+    }

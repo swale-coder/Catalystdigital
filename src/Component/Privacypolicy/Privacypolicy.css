@@ -1,0 +1,91 @@
+/* Container Styling */
+.privacy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Add subtle hover lift effect */
+.privacy-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+.privacy-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #1f2937; /* Dark Gray */
+  font-weight: 700;
+}
+
+/* Headings */
+.privacy-heading {
+  color: #111827;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-left: 4px solid #4f46e5; /* Blue Accent Line */
+  padding-left: 10px;
+}
+
+/* Paragraph Styling */
+.privacy-container p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* List Styling */
+.privacy-container ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  margin-bottom: 15px;
+}
+
+.privacy-container ul li {
+  margin-bottom: 10px;
+}
+
+/* Links Styling */
+.privacy-container a {
+  color: #4f46e5; /* Blue */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.privacy-container a:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.privacy-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280; /* Gray */
+  border-top: 1px solid #e5e7eb; /* Light gray border */
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 25px;
+  }
+  .privacy-title {
+    font-size: 2rem;
+  }
+  .privacy-heading {
+    font-size: 1.3rem;
+  }
+}

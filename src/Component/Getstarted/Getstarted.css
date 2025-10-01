@@ -1,0 +1,233 @@
+/* Global box-sizing for easier layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Centered container */
+.getstarted-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a90e2, #1d3557);
+  padding: 20px;
+}
+
+/* Form card */
+.getstarted-form {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1d3557;
+  user-select: none;
+}
+
+/* Error message */
+.error-message {
+  background: #ffe5e5;
+  color: #e63946;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.getstarted-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.getstarted-form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+  outline-offset: 2px;
+}
+
+/* Password with toggle (if applicable) */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  user-select: none;
+}
+
+/* Captcha */
+.captcha-box {
+  text-align: left;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: #357ab8;
+  outline: none;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  user-select: none;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Social login buttons */
+.social-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+  border: none;
+  user-select: none;
+}
+
+.social-button.google {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.social-button.apple {
+  background: #000;
+  color: #fff;
+}
+
+.social-button:hover,
+.social-button:focus {
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.social-button:active {
+  transform: translateY(0);
+}
+
+/* Links */
+.form-links {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-links a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-links a:hover,
+.form-links a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .getstarted-form {
+    padding: 25px 20px;
+  }
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .getstarted-form {
+    padding: 20px 15px;
+  }
+  .form-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1d3557;
+  color: #aac8ea;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 0 0 12px 12px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}

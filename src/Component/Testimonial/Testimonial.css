@@ -1,0 +1,101 @@
+ .testimonial-section {
+            width: 100%;
+            padding: 80px 20px;
+            background: #f9fbfd;
+            display: flex;
+            justify-content: center;
+        }
+
+        .testimonial-container {
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .testimonial-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .testimonial-subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* Testimonial Card inside slider */
+        .testimonial-card {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 14px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            margin: 0 10px;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonial-avatar {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #007bff;
+            object-fit: cover;
+        }
+
+        .testimonial-feedback {
+            font-style: italic;
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 18px;
+            line-height: 1.6;
+            min-height: 80px;
+        }
+
+        .testimonial-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-role {
+            font-size: 0.95rem;
+            color: #777;
+        }
+
+        /* Adjustments for the slider */
+        .testimonial-slider {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* New CSS for the grid layout */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Additional CSS for Slick.js navigation dots */
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #007bff;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
